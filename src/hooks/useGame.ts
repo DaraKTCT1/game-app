@@ -5,10 +5,11 @@ interface FetchGameResponse {
   count: number;
   results: Game[];
 }
-interface Game {
-  id: number;
-  name: string;
-}
+export interface Game {
+    id: number;
+    name: string;
+    background_image: string;
+  }
 const useGame = () => {
   const controller = new AbortController();
   const [games, setGames] = useState<Game[]>([]);
