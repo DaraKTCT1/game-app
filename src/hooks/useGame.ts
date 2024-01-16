@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
+import { useEffect, useState } from "react";
 import { CanceledError } from "axios";
 interface FetchGameResponse {
   count: number;
@@ -10,6 +10,7 @@ export interface Game {
     name: string;
     background_image: string;
     parent_platforms: {platform: Platform}[]
+    metacritic: number;
 
   }
 export interface Platform{
@@ -31,7 +32,7 @@ const useGame = () => {
         setError(err.message);
       });
 
-    return () => controller.abort();
+    // return () => controller.abort();
   }, []);
 
   return { games, error };
