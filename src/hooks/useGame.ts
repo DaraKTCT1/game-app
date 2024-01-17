@@ -14,8 +14,16 @@ export interface Platform {
   slug: string;
 }
 const useGame = (gameQuery: GameQueryType) =>
-  useData<Game>("/games",
-    { params: { genres: gameQuery.genre?.id, platforms: gameQuery.platform?.id, ordering: gameQuery.sortOrder } },
+  useData<Game>(
+    "/games",
+    {
+      params: {
+        genres: gameQuery.genre?.id,
+        platforms: gameQuery.platform?.id,
+        ordering: gameQuery.sortOrder,
+        search: gameQuery.searchText,
+      },
+    },
     [gameQuery]
   );
 
