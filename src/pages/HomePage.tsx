@@ -28,7 +28,6 @@ const HomePage = () => {
           <Flex marginBottom={5}>
             <Box marginRight={5}>
               <PlatformSelector />
-              
             </Box>
             <SortSelector />
           </Flex>
