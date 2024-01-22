@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <Link to="/">
       <HStack padding={"10px"}>
-        <Image src={logo} boxSize="6.5rem" />
+        <Image src={logo} boxSize={{base: 65,md: 120}} />
         <SearchInput />
         <ColorModeSwitch />
       </HStack>
