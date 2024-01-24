@@ -8,7 +8,7 @@ const ErrorPage = () => {
     <>
       <NavBar />
       <Box padding={5}>
-        <Heading>Oops</Heading>
+        <Heading>Oops<h2>&#128514;</h2></Heading>
         <Text>
             {isRouteErrorResponse(error)
             ? "This page does not exist."
