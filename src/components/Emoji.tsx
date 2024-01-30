@@ -1,7 +1,7 @@
 import { Image, ImageProps } from "@chakra-ui/react";
-import like from "../assets/like.png"
-import reallylike from "../assets/reallylike.png"
-import unlike from "../assets/unlike.webp"
+const like = "https://github.com/DaraKTCT1/image/blob/main/like.png?raw=true"
+const reallylike = "https://github.com/DaraKTCT1/image/blob/main/reallylike.png?raw=true"
+const unlike = "../assets/unlike.webp"
 
 interface PropType{
     rating: number;
